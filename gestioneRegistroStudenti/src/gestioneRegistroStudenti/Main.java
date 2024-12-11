@@ -47,13 +47,9 @@ Uscire dal programma */
 				String cognome = scanner.nextLine();
 				System.out.println("Inserisci la matricola: ");
 				String matricola = scanner.nextLine();
-				
-				/*registro.controllaMatricolaEsistente(matricola);
-				non sono riuscita ad implementare questa funzione tramite l'apposito metodo evitando di andare avanti comunque
-				con l'aggiunta dello studente*/
-				
+							
 				Studente studente = new Studente(nome, cognome, matricola); //passo all'oggetto studente i valori inseriti dall'utente
-				registro.aggiungiStudente(studente);	//aggiungo all'arraylist studenti della classe registroStudenti
+				registro.aggiungiStudente(studente, matricola);	//aggiungo all'arraylist studenti della classe registroStudenti
 			break;
 			
 			case 2:
